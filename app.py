@@ -90,7 +90,7 @@ fig.update_layout(
     hovermode="x unified",
     template="plotly_dark"
 )
-fig.add_hline(y=0, line_color="white", line_opacity=0.5)
+fig.add_hline(y=0, line_color="white", opacity=0.5)
 fig.add_vline(x=S0, line_color="yellow", line_dash="dot", annotation_text="Prix Actuel")
 
 st.plotly_chart(fig, use_container_width=True)
